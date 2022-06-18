@@ -1,0 +1,268 @@
+body {
+  overflow-x: hidden;
+}
+/* html, body {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+} */
+
+#navigation {
+  min-height: 100vh;
+  min-width: 100vh;
+  background-color: #fff;
+  text-align: center;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-family: 'Aclonica';
+  font-style: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #000;
+  font-family: 'Kurale';
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* Search Bar */
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* Carousel */
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: repeat scroll center scroll;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.4;
+}
+
+.carousel-caption {
+  bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px
+}
+
+.carousel-caption h5 {
+  font-size: 100px;
+  font-family: 'Unna';
+  font-weight: 700;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+  top: 2rem;
+}
+
+.slider-btn {
+  margin-top: 30px;
+}
+
+.slider-btn .btn {
+  background-color: #ED72AE;
+  color: #fff;
+  border-radius: 0;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  margin: 2px;
+}
+
+/* This maintains the full image but no aspect ratio it appears stretched */
+/* .w-100 {
+  width: 100% !important;
+  height: 100vh;
+} */
+/* This works better */
+.carousel-inner>.carousel-item>img {
+  height: 100vh;
+}
+
+h3 a h5 {
+  font-family: 'Unna';
+  font-weight: 700;
+}
+.card-title{
+  font-family: 'Unna';
+  font-weight: 700;
+}
+.card-text{
+  font-family: 'Source Serif Pro';
+}
+p  {
+  font-family: 'Source Serif Pro';
+  padding: 3% 10%;
+  line-height: 1.5rem;
+}
+.pdrak{
+  padding-top: 10%;
+}
+/* About Us */
+#about-us {
+  background-color: #ED72AE;
+  min-height: 100vh;
+  min-width: 100vh;
+}
+
+.personal {
+  text-align: center;
+  padding: 10% 10%;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+  min-height: 100vh;
+  min-width: 100vh;
+  padding: 20% 15%;
+}
+
+.social {
+  padding: 7% 5%;
+  font-size: 2rem;
+}
+
+p {
+  marging: 20%;
+}
+
+/* Products Page */
+#home-products {
+  min-height: 100vh;
+  min-width: 100vh;
+  text-align: center;
+}
+
+.list {
+  padding: 9% 15% 5% 15%;
+}
+
+.col-lg-3 {
+  margin: 2% 0 5% 0;
+}
+
+.prod {
+  margin: 2% 0 5% 0;
+}
+
+.images {
+  width: 30%;
+}
+
+/* Notebook */
+#home-notebooks {
+  background-color: #EAD4EB;
+  min-height: 100vh;
+  min-width: 100vh;
+  text-align: center;
+  padding: 7%15%;
+}
+
+.dropp{
+  font-family: 'Unna';
+}
+.hamb {
+  position: absolute;
+  position: fixed;
+  font-family: 'Aclonica';
+  font-size:1.5rem;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: none;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: black;
+}
+
+/* Diaries */
+#home-diaries {
+  background-color: #EAD4EB;
+  min-height: 100vh;
+  min-width: 100vh;
+  text-align: center;
+  padding: 7%15%;
+}
+
+/* Contact by mail */
+#Contact-by-mail {
+  background-color: #EAD4EB;
+  padding-top: 5%;
+  min-height: 100vh;
+  min-width: 100vh;
+  text-align: center;
+}
+
+.subm {
+  text-align: left;
+  padding-left: 8%;
+}
+
+.colo1 {
+  padding-left: 15%;
+}
+
+.logo-resize {
+  width: 100%;
+  /* transform: rotate(25deg); */
+  text-align: center;
+}
+
+@media screen and (max-height: 450px max-width: 1028px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
